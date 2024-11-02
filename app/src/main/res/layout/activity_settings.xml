@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="changeTheme"
+            type="com.example.easykhatabahi.Settings" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Settings">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="23dp"
+                android:elevation="33dp"
+
+
+                android:background="#00FFFFFF"
+                android:padding="8dp"
+
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:text="Change the Theme"/>
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Change"
+                    android:textSize="19dp"
+                    android:background="@drawable/btn_change"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:id="@+id/btntheme"
+
+
+
+                    android:textStyle="bold"
+                    android:theme="@style/Base.Theme.EasyKhatabahi"
+                    />
+
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="About App"
+                android:gravity="center"
+                android:textColor="@color/category4"
+                android:textSize="18dp"
+                android:layout_marginTop="22dp"
+                android:clickable="true"/>
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginTop="30dp"
+
+                android:layout_gravity="center"
+
+                />
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+</layout>
